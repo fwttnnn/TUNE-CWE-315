@@ -1,0 +1,10 @@
+{
+  "name": "tune_injection",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/youkwhd/tune_injection",
+  "author": "youkwhd <lolywk@tutanota.com>",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
