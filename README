@@ -18,7 +18,7 @@ extension.
 Using the script
 ----------------
 
-Patch the script, add ```console.log sso_account``` to EOF
+Patch the script, add ``console.log sso_account`` to EOF
 or, run this command: 
 
 echo "console.log sso_account" >> src/main.coffee
