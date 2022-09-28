@@ -1,0 +1,34 @@
+tune_injection
+==============
+
+A web extension to demonstrate plain-text cookie password
+vulnerability targeting the Telkom University's Network
+Engine.
+
+The injected script will grab your SSO account's
+credentials.
+
+This web ext targets everyone who's connected to the TUNE
+wifi (logged in with an SSO account).
+
+In order to execute this script successfully, the attacker
+needs to social engineer the target to install the web
+extension.
+
+Using the script
+----------------
+
+Patch the script, add ```console.log sso_account``` to EOF
+or, run this command: 
+
+echo "console.log sso_account" >> src/main.coffee
+
+or, if you prefer, use the alert function.
+
+Install the required dependencies, then build the web
+extension itself.
+
+Use it on your web browser (currently tested on Gecko
+engine)
+
+Last step, connect to a database, steal credentials.
