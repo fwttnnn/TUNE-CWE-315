@@ -32,3 +32,9 @@ Use it on your web browser (currently tested on Gecko
 engine)
 
 Last step, connect to a database, steal credentials.
+
+References
+----------
+
+<https://stackoverflow.com/questions/18650586/handling-username-password-in-cookie-for-login>
+<https://www.reddit.com/r/cybersecurity/comments/u8qd1j/lenovo_forums_stores_plaintext_password_as_a>
