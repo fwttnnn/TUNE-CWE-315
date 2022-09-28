@@ -1,10 +1,20 @@
 {
   "name": "tune_injection",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "src/main.coffee",
   "repository": "https://github.com/youkwhd/tune_injection",
   "author": "youkwhd <lolywk@tutanota.com>",
+  "scripts": {
+    "build": "yarn build:misc && yarn build:watch",
+    "build:misc": "cp src/manifest.json dist/manifest.json && cp -r src/popup/ dist/ && cp -r assets/ dist/",
+    "build:watch": "coffee -ctw --no-header -o dist/bundle.js src/main.coffee",
+    "start": "yarn run start:firefox",
+    "start:firefox": "web-ext run --source-dir ./dist/ --start-url https://tune.telkomuniversity.ac.id/",
+    "start:chrome": "web-ext run -t chromium --source-dir ./dist/ --start-url https://tune.telkomuniversity.ac.id/"
+  },
   "devDependencies": {
-    "typescript": "^4.8.3"
+    "@babel/core": "^7.19.3",
+    "coffeescript": "^2.7.0",
+    "web-ext": "^7.2.0"
   }
 }
