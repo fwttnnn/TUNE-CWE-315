@@ -14,4 +14,4 @@ clean:
 	$(RM) -r dist/
 
 .PHONY:
-	clean coffee
+	clean
