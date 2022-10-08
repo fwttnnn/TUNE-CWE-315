@@ -1,17 +1,12 @@
 {
-   "name": "TUNE Injection & Plain Text Cookie Vuln",
+   "name": "TUNE CWE-315",
    "description": "This extension is made to demonstrate TUNE's vulnerability",
    "version": "1.0",
    "manifest_version": 2,
    "content_scripts": [
         {
           "matches": ["*://tune.telkomuniversity.ac.id/*"],
-          "js": ["bundle.js"]
+          "js": ["main.js"]
         }
-   ],
-  "browser_action": {
-      "browser_style": false,
-      "default_title": "TUNE IC",
-      "default_popup": "popup/index.html"
-  }
+   ]
 }
