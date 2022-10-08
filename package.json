@@ -1,8 +1,8 @@
 {
-  "name": "tune_injection",
+  "name": "TUNE-CWE-315",
   "version": "1.0.0",
   "main": "src/main.coffee",
-  "repository": "https://github.com/youkwhd/tune_injection",
+  "repository": "https://github.com/youkwhd/TUNE-CWE-315",
   "author": "youkwhd <lolywk@tutanota.com>",
   "scripts": {
     "build": "npm run build:misc && npm run build:watch",

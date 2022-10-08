@@ -1,9 +1,9 @@
-tune_injection
-==============
+TUNE-CWE-315
+============
 
 A web extension to demonstrate plain-text cookie password
-vulnerability targeting the Telkom University's Network
-Engine.
+vulnerability (CWE-315) targeting the Telkom University's
+Network Engine.
 
 The injected script will grab your SSO account's
 credentials.
