@@ -25,8 +25,8 @@ echo "console.log sso_account" >> src/main.coffee
 
 or, if you prefer, use the alert function.
 
-Install the required dependencies, then build the web
-extension itself.
+Install the required dependencies (coffeescript), then
+build the web extension yourself.
 
 Use it on your web browser (currently tested on Gecko
 engine)
