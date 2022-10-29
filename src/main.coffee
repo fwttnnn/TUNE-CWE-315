@@ -13,9 +13,9 @@ sso_account = {
 }
 
 for c in document.cookie.split(';')
-    c_stripped = decodeURIComponent(c.split('=')[1])
-    c.includes(USERNAME) and sso_account.username = c_stripped
-    c.includes(PASSWORD) and sso_account.pw = c_stripped
+    cstrp = decodeURIComponent(c.split('=')[1])
+    c.includes(USERNAME) and sso_account.username = cstrp
+    c.includes(PASSWORD) and sso_account.pw = cstrp
 
 ###
 https://youkwhd.vercel.app/
