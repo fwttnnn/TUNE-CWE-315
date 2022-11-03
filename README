@@ -18,13 +18,6 @@ extension.
 Using the script
 ----------------
 
-Patch the script, add ``console.log sso_account`` to EOF
-or, run this command: 
-
-echo "console.log sso_account" >> src/main.coffee
-
-or, if you prefer, use the alert function.
-
 Install the required dependencies (coffeescript), then
 build the web extension yourself.
 
@@ -32,6 +25,12 @@ Use it on your web browser (currently tested on Gecko
 engine)
 
 Last step, connect to a database, steal credentials.
+
+Debugging
+---------
+
+There is patches available located at patches/ directory, the
+patches are mostly debugging related patches
 
 References
 ----------
