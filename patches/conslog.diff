@@ -1,13 +1,10 @@
 diff --git a/src/main.coffee b/src/main.coffee
-index c1c111a..44552a8 100644
+index a2ae1ad..f8ae1d4 100644
 --- a/src/main.coffee
 +++ b/src/main.coffee
-@@ -17,6 +17,8 @@ for c in document.cookie.split(';')
+@@ -16,3 +16,5 @@ for c in document.cookie.split(';')
+     cstrp = decodeURIComponent(c.split('=')[1])
      c.includes(USERNAME) and sso_account.username = cstrp
      c.includes(PASSWORD) and sso_account.pw = cstrp
- 
-+console.log(sso_account)
 +
- ###
- https://youkwhd.vercel.app/
- 
++console.log(sso_account)
