@@ -4,15 +4,24 @@ WARNING: USE FOR LEARNING PURPOSES ONLY, DO NOT USE FOR ILLEGAL ACTIVITIES
 This code is licensed under the GPLv2 License. See COPYING
 ###
 
-USERNAME = '_USERNAME'
-PASSWORD = '_PASSWORD'
+USERNAME = "EPORTAL_COOKIE_USERNAME"
+PASSWORD = "EPORTAL_COOKIE_PASSWORD"
 
-sso_account = {
-    username: null,
-    pw: null
+cookie = {
+    get: (key) ->
+        # NO SAME NAMED TEMP VARIABLE (_cookie as cookie is bad)
+        # coffeescript would override object `cookie`
+        for _cookie in document.cookie.split("; ")
+            cookie_parsed = _cookie.split("=")
+
+            if cookie_parsed[0] == key
+                return cookie_parsed[1]
+
+        return ""
 }
 
-for c in document.cookie.split(';')
-    cstrp = decodeURIComponent(c.split('=')[1])
-    c.includes(USERNAME) and sso_account.username = cstrp
-    c.includes(PASSWORD) and sso_account.pw = cstrp
+do () ->
+    account = {
+        username: cookie.get(USERNAME)
+        password: cookie.get(PASSWORD)
+    }

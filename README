@@ -26,12 +26,6 @@ engine)
 
 Last step, connect to a database, steal credentials.
 
-Debugging
----------
-
-There is patches available located at patches/ directory, the
-patches are mostly debugging related patches
-
 References
 ----------
 
