@@ -4,8 +4,8 @@ WARNING: USE FOR LEARNING PURPOSES ONLY, DO NOT USE FOR ILLEGAL ACTIVITIES
 This code is licensed under the GPLv2 License. See COPYING
 ###
 
-USERNAME = "EPORTAL_COOKIE_USERNAME"
-PASSWORD = "EPORTAL_COOKIE_PASSWORD"
+COOKIE_USERNAME = "EPORTAL_COOKIE_USERNAME"
+COOKIE_PASSWORD = "EPORTAL_COOKIE_PASSWORD"
 
 cookie = {
     get: (key) ->
@@ -22,6 +22,6 @@ cookie = {
 
 do () ->
     account = {
-        username: cookie.get(USERNAME)
-        password: cookie.get(PASSWORD)
+        username: cookie.get(COOKIE_USERNAME)
+        password: cookie.get(COOKIE_PASSWORD)
     }
