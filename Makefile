@@ -1,5 +1,5 @@
 CC=coffee
-CFLAGS=-ct --no-header
+CFLAGS=-c --no-header
 
 SRC=$(wildcard src/*coffee)
 DIST=$(patsubst src/%.coffee,dist/%.js, $(SRC))
